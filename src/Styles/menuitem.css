@@ -1,0 +1,23 @@
+.menu {
+  padding: 20px;
+}
+.menu-item {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background: darkgray;
+  border-radius: 30px;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.menu-item:hover {
+  box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
+}
+
+.menu-item.active {
+  box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
+}

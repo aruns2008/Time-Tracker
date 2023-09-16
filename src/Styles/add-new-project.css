@@ -1,0 +1,19 @@
+.add-new-project {
+  padding: 25px;
+  box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
+  background: transparent;
+}
+.add-new-project__field {
+  padding: 15px;
+}
+.add-new-project__label {
+  padding: 0 20px;
+}
+.add-new-project__input {
+  padding: 10px;
+  border-radius: 10px;
+}
+.add-new-project__label {
+  font-size: 15px;
+  font-family: ui-sans-serif;
+}

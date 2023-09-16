@@ -1,0 +1,41 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-header {
+  margin-top: 10%;
+  background: #878787b8;
+  border-radius: 12px 12px 0px 0px;
+}
+.dashboard-header h3 {
+  margin: 0;
+  padding: 10px;
+}
+
+.dashBoard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 500px;
+  background: gainsboro;
+  border-radius: 0 0 12px 12px;
+  padding: 1px 1px;
+}
+.dashBoard-container__side-bar {
+  background: white;
+  border-radius: 0px 0px 0px 12px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 4px 15px 0 rgb(63 135 132 / 75%); */
+}
+.dashBoard-container__dash-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
