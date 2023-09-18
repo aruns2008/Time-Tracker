@@ -20,8 +20,8 @@ function App() {
             <SideBar />
           </div>
           <div className="dashBoard-container__dash-board">
-            {selectedItem === 1 && <ProjectDetails />}
-            {selectedItem === 0 && <AddNewProject />}
+            {selectedItem === 0 && <ProjectDetails />}
+            {selectedItem === 1 && <AddNewProject />}
             {selectedItem === 2 && <AddUser />}
           </div>
         </div>

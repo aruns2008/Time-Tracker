@@ -1,3 +1,7 @@
+.project-details {
+  width: 60%;
+  height: 60%;
+}
 .project-details__heading {
   min-width: 80px;
 }
@@ -5,6 +9,7 @@
   padding: 25px;
   box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
   background: transparent;
+  width: 100%;
 }
 .project-details__table tr th {
   min-width: 80px;
@@ -27,7 +32,7 @@
   padding: 10px;
   border-radius: 7px;
   background: inherit;
-  
+  width: 100px;
   cursor: pointer;
 }
 .project-refresh-button button:hover {
@@ -35,5 +40,10 @@
 }
 .project-refresh-button {
   text-align: end;
-  padding: 10px;
+  padding: 25px 0;
+}
+.project-details__table-container {
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
 }

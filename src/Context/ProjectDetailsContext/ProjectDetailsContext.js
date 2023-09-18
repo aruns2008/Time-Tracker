@@ -28,10 +28,10 @@ const ProjectDetailsContext = ({ children }) => {
   ]);
 
   const [fieldData, setFieldData] = useState([
-    { label: "Label 1", value: "" },
-    { label: "Label 2", value: "" },
-    { label: "Label 3", value: "" },
-    { label: "Label 4", value: "" },
+    { label: "TT Project Id", value: "" },
+    { label: "TT Project Name", value: "" },
+    { label: "Asana Project ID", value: "" },
+    
   ]);
 
   const fieldDataUpdate = { fieldData, setFieldData };
