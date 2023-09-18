@@ -31,7 +31,6 @@ const ProjectDetailsContext = ({ children }) => {
     { label: "TT Project Id", value: "" },
     { label: "TT Project Name", value: "" },
     { label: "Asana Project ID", value: "" },
-    
   ]);
 
   const fieldDataUpdate = { fieldData, setFieldData };

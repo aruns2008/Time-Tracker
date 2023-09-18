@@ -3,7 +3,7 @@ import axios from "axios";
 import "../Styles/add-new-project.css";
 import { useProjectFieldData } from "../Context/ProjectDetailsContext/ProjectDetailsContext.js";
 
-const AddNewProject = () => {
+const CreateTask = () => {
   const { fieldData, setFieldData } = useProjectFieldData();
 
   const [currentFieldData, setCurrentFieldData] = useState([
@@ -24,17 +24,53 @@ const AddNewProject = () => {
     );
   };
 
+//   const handleSubmit = () => {
+//     for (let label in currentFieldData) {
+//       if (currentFieldData[label].value === "") {
+//         setErrorMessage("Please fill all the fields");
+//         setValidState(false);
+//       } else {
+//         setErrorMessage("");
+//         setValidState(true);
+//       }
+//     }
+//     if (validState === true) {
+        
+//       const apiUrl =
+//         "https://bb25-116-68-96-99.ngrok-free.app/api/registerWebhook";
+
+//       const postData = currentFieldData.map(({ label, value }) => ({
+//         [label]: value,
+//       }));
+// console.log("true",postData);
+//       axios
+//         .post(apiUrl, postData)
+//         .then((response) => {
+//           console.log("Success:", response.data);
+//           alert("Webhook Registered Successfully");
+//         })
+//         .catch((error) => {
+//           console.error("Error:", error);
+//         });
+//     }
+//   };
   const handleSubmit = () => {
+    let isValid = true;
+
     for (let label in currentFieldData) {
       if (currentFieldData[label].value === "") {
         setErrorMessage("Please fill all the fields");
         setValidState(false);
-      } else {
-        setErrorMessage("");
-        setValidState(true);
+        isValid = false; // Set isValid to false if any field is empty
+        break; // No need to check further if one field is empty
       }
     }
-    if (validState === true) {
+
+    if (isValid) {
+      // Only proceed if all fields are filled
+      setErrorMessage("");
+      setValidState(true);
+
       const apiUrl =
         "https://bb25-116-68-96-99.ngrok-free.app/api/registerWebhook";
 
@@ -53,8 +89,7 @@ const AddNewProject = () => {
         });
     }
   };
-  
-  return (
+   return (
     <div className="add-new-project">
       {fieldData.map((data, index) => (
         <div key={index} className="add-new-project__field">
@@ -74,4 +109,4 @@ const AddNewProject = () => {
   );
 };
 
-export default AddNewProject;
+export default CreateTask;

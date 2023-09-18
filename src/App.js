@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import { ProjectDetails, SideBar, AddNewProject, AddUser } from "./Components";
+import { ProjectDetails, SideBar, CreateTask, AddUser, UpdateTask } from "./Components";
 
 import { useSelectedItemContext } from "./Context/ProjectDetailsContext/ProjectDetailsContext";
 
@@ -21,8 +21,9 @@ function App() {
           </div>
           <div className="dashBoard-container__dash-board">
             {selectedItem === 0 && <ProjectDetails />}
-            {selectedItem === 1 && <AddNewProject />}
-            {selectedItem === 2 && <AddUser />}
+            {selectedItem === 1 && <CreateTask />}
+            {selectedItem === 2 && <UpdateTask />}
+            {selectedItem === 3 && <AddUser />}
           </div>
         </div>
       </div>
