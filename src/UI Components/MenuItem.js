@@ -4,13 +4,12 @@ import "../Styles/menuitem.css";
 import { useSelectedItemContext } from "../Context/ProjectDetailsContext/ProjectDetailsContext";
 
 const MenuItem = ({ menuList }) => {
+  const { selectedItem } = useSelectedItemContext();
 
-const {selectedItem} = useSelectedItemContext();
+  const { setSelectedItem } = useSelectedItemContext();
 
-const {setSelectedItem} = useSelectedItemContext();
+  // const [selectedItem, setSelectedItem] = useState(null);
 
-// const [selectedItem, setSelectedItem] = useState(null);
-  
   const selectMenu = (index) => {
     setSelectedItem(index);
   };
@@ -22,8 +21,9 @@ const {setSelectedItem} = useSelectedItemContext();
           key={index}
           className={`menu-item ${selectedItem === index ? "active" : ""}`}
           onClick={() => selectMenu(index)}
-        >
-          <h3>{item}</h3>
+         >
+          <div className="menu-item__active"></div><img src={item.image}></img>
+          <h3>{item.name}</h3>
         </div>
       ))}
     </div>

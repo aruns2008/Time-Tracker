@@ -1,13 +1,30 @@
 import React from "react";
 import "../Styles/sidebar.css";
-import { MenuItem } from "../UI Components";
+import MenuItem from "../UI Components/MenuItem.js";
 
 const SideBar = () => {
-  const menuList = ["TT Project Id", "Create Task", "Update Task", "Add User",];
+
+  const menuList = [{name:"Create Project",image:"/add_circle.svg"},{name:"Registered Webhooks",image:"/webhook.svg"},{name:"Analytics",image:"/monitoring.svg"},{name:"Users",image:"/group.svg"}];
+
   return (
-    <div>
-      <MenuItem menuList={menuList} />      
+    <div className="side-bar">
+      <div className="side-bar__logo">
+        <div className="side-bar__logo-image">
+          <img src="time.svg"></img>
+          <p className="side-bar__logo-text">Time Tracker</p>
+        </div>
+      </div>
+      <div className="side-bar__header">
+        <img
+          className="side-bar__header-icon"
+          src="menu_book.svg"
+          alt="Dashboard Icon"
+        />
+        <h2 className="side-bar__header-title">Dashboard</h2>
+      </div>
+      <MenuItem menuList={menuList} />
     </div>
   );
 };
+
 export default SideBar;

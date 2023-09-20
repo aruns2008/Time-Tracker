@@ -1,25 +1,109 @@
 .add-new-project {
-  width: 60%;
-  padding: 25px;
-  box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
-  background: transparent;
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.add-new-project:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .add-new-project__field {
   padding: 15px;
   display: flex;
-  justify-content: center;
+
   align-items: center;
 }
 .add-new-project__label {
   padding: 0 20px;
-  width: 40%;
+  font-size: 15px;
+  min-width: 80px;
 }
 .add-new-project__input {
-  padding: 10px;
-  border-radius: 10px;
   width: 60%;
+  font-weight: bold;
+  height: 35px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #d4dfff75;
+  color: #748194;
+  font-size: 14px;
 }
-.add-new-project__label {
-  font-size: 15px;
-  font-family: ui-sans-serif;
+
+.add-new-project__date:focus,
+.add-new-project__date:hover {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+  background: white;
+}
+
+.add-new-project__select:focus,
+.add-new-project__select:hover {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+  background: white;
+}
+.add-new-project__input:focus,
+.add-new-project__input:hover {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+  background: white;
+}
+.add-new-project__checkbox:hover {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+  background: white;
+}
+.awesome-form .btn {
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-new-project__date {
+  font-weight: bold;
+  height: 35px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #d4dfff75;
+  color: #748194;
+  font-size: 14px;
+}
+
+.add-new-project__select {
+  font-weight: bold;
+  height: 35px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #d4dfff75;
+  color: #748194;
+  font-size: 14px;
+}
+
+
+.add-new-project__select option {
+  /* Add your styles here */
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  font-size: 14px; /* Font size */
+}
+
+.add-new-project__select option:hover {
+  /* Add your hover styles here */
+  background-color: #007bff; /* Hover background color */
+  color: #fff; /* Hover text color */
 }

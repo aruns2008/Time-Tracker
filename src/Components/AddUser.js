@@ -3,7 +3,7 @@ import React from "react";
 const AddUser = () => {
   return (
     <div>
-      <h1>AddUser</h1>
+      <h1>Welcome to Time Tracker</h1>
     </div>
   );
 };

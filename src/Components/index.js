@@ -3,4 +3,5 @@ export { default as ProjectDetails} from "./ProjectDetails"
 export { default as AddUser} from "./AddUser"
 export { default as UpdateTask} from "./UpdateTask"
 export { default as CreateTask} from "./CreateTask"
+export { default as CreateProject} from "./CreateProject"
 
