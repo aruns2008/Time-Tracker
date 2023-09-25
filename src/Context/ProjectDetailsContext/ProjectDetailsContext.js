@@ -29,9 +29,9 @@ const ProjectDetailsContext = ({ children }) => {
 
   const [fieldData, setFieldData] = useState([
     { label: "Name", value: "" },
-    { label: "Start Date", value: "" },
-    { label: "Billable", value: "" },
-    { label: "Active", value: "" },
+    { label: "StartDate", value: "" },
+    { label: "Billable", value: false },
+    { label: "Active", value: false },
     { label: "Client", value: "" },
     
   ]);

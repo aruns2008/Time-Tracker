@@ -24,36 +24,36 @@ const CreateTask = () => {
     );
   };
 
-//   const handleSubmit = () => {
-//     for (let label in currentFieldData) {
-//       if (currentFieldData[label].value === "") {
-//         setErrorMessage("Please fill all the fields");
-//         setValidState(false);
-//       } else {
-//         setErrorMessage("");
-//         setValidState(true);
-//       }
-//     }
-//     if (validState === true) {
-        
-//       const apiUrl =
-//         "https://bb25-116-68-96-99.ngrok-free.app/api/registerWebhook";
+  //   const handleSubmit = () => {
+  //     for (let label in currentFieldData) {
+  //       if (currentFieldData[label].value === "") {
+  //         setErrorMessage("Please fill all the fields");
+  //         setValidState(false);
+  //       } else {
+  //         setErrorMessage("");
+  //         setValidState(true);
+  //       }
+  //     }
+  //     if (validState === true) {
 
-//       const postData = currentFieldData.map(({ label, value }) => ({
-//         [label]: value,
-//       }));
-// console.log("true",postData);
-//       axios
-//         .post(apiUrl, postData)
-//         .then((response) => {
-//           console.log("Success:", response.data);
-//           alert("Webhook Registered Successfully");
-//         })
-//         .catch((error) => {
-//           console.error("Error:", error);
-//         });
-//     }
-//   };
+  //       const apiUrl =
+  //         "https://bb25-116-68-96-99.ngrok-free.app/api/registerWebhook";
+
+  //       const postData = currentFieldData.map(({ label, value }) => ({
+  //         [label]: value,
+  //       }));
+  // console.log("true",postData);
+  //       axios
+  //         .post(apiUrl, postData)
+  //         .then((response) => {
+  //           console.log("Success:", response.data);
+  //           alert("Webhook Registered Successfully");
+  //         })
+  //         .catch((error) => {
+  //           console.error("Error:", error);
+  //         });
+  //     }
+  //   };
   const handleSubmit = () => {
     let isValid = true;
 
@@ -89,7 +89,7 @@ const CreateTask = () => {
         });
     }
   };
-   return (
+  return (
     <div className="add-new-project">
       {fieldData.map((data, index) => (
         <div key={index} className="add-new-project__field">

@@ -3,8 +3,13 @@ import "../Styles/sidebar.css";
 import MenuItem from "../UI Components/MenuItem.js";
 
 const SideBar = () => {
-
-  const menuList = [{name:"Create Project",image:"/add_circle.svg"},{name:"Registered Webhooks",image:"/webhook.svg"},{name:"Analytics",image:"/monitoring.svg"},{name:"Users",image:"/group.svg"}];
+  const menuList = [
+    { name: "Create Project", image: "/add_circle.svg" },
+    { name: "Projects", image: "/list.svg" },
+    { name: "Registered Webhooks", image: "/webhook.svg" },
+    { name: "Analytics", image: "/monitoring.svg" },
+    { name: "Users", image: "/group.svg" },
+  ];
 
   return (
     <div className="side-bar">

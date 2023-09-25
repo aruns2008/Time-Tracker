@@ -5,3 +5,4 @@ export { default as UpdateTask} from "./UpdateTask"
 export { default as CreateTask} from "./CreateTask"
 export { default as CreateProject} from "./CreateProject"
 
+export { default as LogInPage } from './LogInPage';

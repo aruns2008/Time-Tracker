@@ -9,6 +9,7 @@
   align-items: center;
   margin: 13px 0px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .menu-item h3 {
   margin: 0;
@@ -47,10 +48,11 @@
 .menu-item__active {
   padding: 12px 2px;
   position: absolute;
-
+  transition: all 0.3s ease;
   margin-left: -18px;
   border-radius: 0px 8px 8px 0px;
 }
 .menu-item.active .menu-item__active {
   background: #5d5fef;
+  transition: all 0.3s ease;
 }
