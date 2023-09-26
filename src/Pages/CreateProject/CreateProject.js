@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
-import "../Styles/add-new-project.css";
-import { useProjectFieldData } from "../Context/ProjectDetailsContext/ProjectDetailsContext.js";
-import { Label, Button, InputField, Select } from "../UI Components";
+import "./add-new-project.css";
+import { useProjectFieldData } from "../../Context/ProjectDetailsContext/ProjectDetailsContext.js";
+import { Label, Button, InputField, Select } from "../../Components";
+
 const CreateProject = () => {
   const { fieldData, setFieldData } = useProjectFieldData();
   

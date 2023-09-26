@@ -1,8 +1,7 @@
-export { default as SideBar } from './SideBar';
-export { default as ProjectDetails} from "./ProjectDetails"
-export { default as AddUser} from "./AddUser"
-export { default as UpdateTask} from "./UpdateTask"
-export { default as CreateTask} from "./CreateTask"
-export { default as CreateProject} from "./CreateProject"
+export { default as MenuItem } from "./MenuItem";
+export { default as Button } from "./Button";
+export { default as Card } from "./Card";
+export { default as InputField } from "./InputField";
+export { default as Label } from "./Label";
+export { default as Select } from "./Select";
 
-export { default as LogInPage } from './LogInPage';

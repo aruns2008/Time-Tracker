@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styles/sidebar.css";
-import MenuItem from "../UI Components/MenuItem.js";
+import "./sidebar.css";
+import MenuItem from "../../Components/MenuItem.js";
 
 const SideBar = () => {
   const menuList = [

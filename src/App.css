@@ -29,10 +29,11 @@
   height: fit-content;
   border-radius: 0 0 12px 12px;
   padding: 1px 1px;
+  min-height: 100vh;
 }
 
 .dashBoard-container__side-bar {
-  height: 100vh;
+
   display: flex;
   justify-content: center;
   background-color: white;
@@ -46,8 +47,9 @@
   align-items: center;
   width: 100%;
   flex-direction: column;
-  height: fit-content;
+  /* height: fit-content; */
   background-size: cover;
+  background: #e8e8e8;
 }
 
 .dashBoard-container__dash-board-component {
@@ -80,7 +82,7 @@
   font-family: "Poppins";
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  
   font-weight: 800;
 }
 

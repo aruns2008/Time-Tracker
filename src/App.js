@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
-import "../src/Styles/log-in-page.css";
+
 import {
   ProjectDetails,
-  SideBar,  
-  CreateProject,
-} from "./Components";
+  SideBar
+} from "./Pages";
 
+import CreateProject from "./Pages/CreateProject/CreateProject";
 import { useSelectedItemContext } from "./Context/ProjectDetailsContext/ProjectDetailsContext";
 
 function App() {
