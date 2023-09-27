@@ -16,7 +16,7 @@
 .add-new-project__field {
   padding: 15px;
   display: flex;
-
+  flex-wrap: wrap;
   align-items: center;
 }
 
