@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/card.css";
+import "./card.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";

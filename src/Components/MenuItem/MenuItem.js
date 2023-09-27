@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import "../Styles/menuitem.css";
+import "./menuitem.css";
 
-import { useSelectedItemContext } from "../Context/ProjectDetailsContext/ProjectDetailsContext";
+import { useSelectedItemContext } from "../../Context/ProjectDetailsContext/ProjectDetailsContext";
 
 const MenuItem = ({ menuList }) => {
   const { selectedItem } = useSelectedItemContext();
 
   const { setSelectedItem } = useSelectedItemContext();
-
-  // const [selectedItem, setSelectedItem] = useState(null);
 
   const selectMenu = (index) => {
     setSelectedItem(index);
