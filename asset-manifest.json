@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Time-Tracker/static/css/main.be3e6369.css",
+    "main.js": "/Time-Tracker/static/js/main.6a27be12.js",
+    "static/js/787.7a70f66d.chunk.js": "/Time-Tracker/static/js/787.7a70f66d.chunk.js",
+    "static/media/glyphicons-halflings-regular.svg": "/Time-Tracker/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
+    "static/media/glyphicons-halflings-regular.ttf": "/Time-Tracker/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
+    "static/media/glyphicons-halflings-regular.woff": "/Time-Tracker/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
+    "static/media/glyphicons-halflings-regular.eot": "/Time-Tracker/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
+    "static/media/glyphicons-halflings-regular.woff2": "/Time-Tracker/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
+    "index.html": "/Time-Tracker/index.html",
+    "main.be3e6369.css.map": "/Time-Tracker/static/css/main.be3e6369.css.map",
+    "main.6a27be12.js.map": "/Time-Tracker/static/js/main.6a27be12.js.map",
+    "787.7a70f66d.chunk.js.map": "/Time-Tracker/static/js/787.7a70f66d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be3e6369.css",
+    "static/js/main.6a27be12.js"
+  ]
+}
